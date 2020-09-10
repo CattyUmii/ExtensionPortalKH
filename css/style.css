@@ -1,0 +1,54 @@
+
+
+.white-color {
+  color: #fff;
+}
+
+.green-color {
+  color: #08A800;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.red-color {
+  color: #FF0000;
+}
+
+.blue-color {
+  color: #0098FF;
+}
+
+.margin-auto {
+  margin: auto;
+}
+.flag{
+  right: 0;
+  top: 20px;
+  position: absolute;
+}
+.logo{
+  text-align: center;
+}
+header {
+  position: relative;
+}
+
+.top {
+  background-color: #08A800;
+}
+
+.super-container {
+  max-width: 1400px;
+  position: relative;
+}
+
+.top .logo img {
+  width: 125px;
+  height: 125px;
+}
+
+footer .right-footer span{
+  word-spacing: 25px;
+}
