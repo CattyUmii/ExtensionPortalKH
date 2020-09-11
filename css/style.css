@@ -1,4 +1,25 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
 
 .white-color {
   color: #fff;
@@ -9,7 +30,7 @@
 }
 
 .padding {
-  padding: 10px;
+  padding: 20px;
 }
 
 .red-color {
@@ -20,17 +41,37 @@
   color: #0098FF;
 }
 
+.black-color {
+  color: #000;
+}
+
 .margin-auto {
   margin: auto;
 }
+
+.space {
+  margin-right: 10px;
+}
+
+.word-weight {
+  font-weight: 800;
+}
+
+.word-space {
+  word-spacing: 10px;
+}
+
 .flag{
   right: 0;
   top: 20px;
+  margin-right: 20px;
   position: absolute;
 }
+
 .logo{
   text-align: center;
 }
+
 header {
   position: relative;
 }
@@ -49,6 +90,97 @@ header {
   height: 125px;
 }
 
-footer .right-footer span{
-  word-spacing: 25px;
+.active {
+  color: #08A800;
+}
+
+header nav {
+  padding: 20px 0;
+  box-shadow: #000;
+}
+
+header nav ul li a:hover {
+  color: #08A800;
+}
+
+footer nav ul li a:hover {
+  color: #000;
+}
+
+footer {
+  background-color: #08A800;
+}
+
+footer .nav-link{
+  padding-left: 0;
+  padding-bottom: 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+footer nav {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+footer .copyright {
+  font-size: 12px
+}
+
+@media screen and (min-width: 440px) and (max-width: 1362px) {
+  header nav ul li span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 439px) {
+  header nav ul li span {
+    display: none;
+  }
+
+  header nav ul li i {
+    margin-right: 0 !important;
+  }
+}
+
+/* resigter page */
+form {
+  width: 478px;
+  height: auto;
+  border: 0.5px solid rgb(143, 141, 141);
+}
+
+.form-border {
+  border: 1px solid #08A800;
+  border-radius: 1%;
+}
+
+.input-group .input-group-prepend span {
+  border-color: #08A800;
+}
+
+.input-group input {
+  border-color: #08A800;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #08A800;
+  outline-color: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 478px) {
+  form {
+    width: 100%;
+    height: auto;
+    border: 0.5px solid rgb(143, 141, 141);
+  }
+}
+
+/* login */
+input[type=checkbox]:checked {
+  border-color: #08A800;
+  
 }

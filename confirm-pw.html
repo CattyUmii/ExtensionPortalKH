@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm Password</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <section class="top">
+        <div class="super-container margin-auto">
+            <div class="logo">
+                <img class="logo-img padding" src="https://cycpp.news/wp-content/uploads/2020/04/%E1%9F%A6-7-383x383.jpg" />
+            </div>
+            <div class="flag">
+                <img id="khmer" src="https://www.countryflags.io/KH/flat/32.png" />
+                <img id="english" src="https://www.countryflags.io/GB/flat/32.png" class="space"/>
+                <a href="#"><i class="fas fa-user white-color space"></i><span class="white-color">ចូលគណនី</span></a>
+            </div>
+        </div>
+    </section>
+    <div class="shadow mb-3 p-1 bg-white rounded">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light super-container margin-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link active black-color" href="#"><i class="fas fa-home space"></i>ទំព័រដើម</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-newspaper space"></i>ព័ត៌មាន / ព្រឹត្តិការណ៍</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link black-color dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-exclamation-circle space"></i>អំពីគេហទំព័រផ្សព្វផ្សាយកសិកម្ម</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">គេហទំព័រផ្សព្វផ្សាយកសិកម្ម</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការរៀបចំស្ថាប័ន</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">កម្មវិធី</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ទំនាក់ទំនង</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link black-color dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-book space"></i>សេវាផ្សព្វផ្សាយ</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">អ្នកផ្តល់សេវាផ្សព្វផ្សាយកសិកម្ម</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការសិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច និងកម្មវិធីសិក្សា</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការទទួលយក​ និងការសាយភាយ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">សេវាផ្តល់ព័ត៌មានបច្ចេកទេសកសិកម្មដល់កសិករ និងអថិតិជន</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-book-reader space"></i>បណ្ណាល័យផ្សព្វផ្សាយកសិកម្ម</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-file-medical space"></i>ស្នើដាក់ឯកសារ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-globe space"></i>តំណភ្ជាប់គេហទំព័រផ្សេង</a>
+                </li>
+              </ul>
+            </div>
+          </nav> -->
+        <nav class="super-container margin-auto">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active black-color" href="#"><i class="fas fa-home space"></i><span>ទំព័រដើម</span></a>
+                </li>
+                <li class="nav-item​​">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-newspaper space"></i><span>ព័ត៌មាន / ព្រឹត្តិការណ៍</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link black-color dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-exclamation-circle space"></i><span>អំពីគេហទំព័រផ្សព្វផ្សាយកសិកម្ម</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">គេហទំព័រផ្សព្វផ្សាយកសិកម្ម</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការរៀបចំស្ថាប័ន</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">កម្មវិធី</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ទំនាក់ទំនង</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link black-color dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><i class="fas fa-book space"></i><span>សេវាផ្សព្វផ្សាយ</span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">អ្នកផ្តល់សេវាផ្សព្វផ្សាយកសិកម្ម</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការសិក្សាតាមប្រព័ន្ធអេឡិចត្រូនិច និងកម្មវិធីសិក្សា</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">ការទទួលយក​ និងការសាយភាយ</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">សេវាផ្តល់ព័ត៌មានបច្ចេកទេសកសិកម្មដល់កសិករ និងអថិតិជន</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-book-reader space"></i><span>បណ្ណាល័យផ្សព្វផ្សាយកសិកម្ម</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-file-medical space"></i><span>ស្នើដាក់ឯកសារ</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link black-color" href="#"><i class="fas fa-globe space"></i><span>តំណភ្ជាប់គេហទំព័រផ្សេង</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <!-- content -->
+  <div class="super-container margin-auto" style="padding: 50px 0">
+    <div class="container d-flex justify-content-center">
+      <form class="justify-items-center padding form-border">
+        <div class="form-row title​​ d-flex justify-content-center text-center">
+          <span​​ class="green-color" style="margin-top: 30px">កំណត់ពាក្យសម្ងាត់ឡើងវិញ</span>
+          <hr style="width: 30px; margin-top: 5px; border: 1px solid #08A800">
+        </div>
+        <div class="row d-flex justify-content-center text-center margin-auto">
+            <span>សូមបញ្ចូលពាក្យសម្ងាត់ថ្មីរបស់អ្នកនៅខាងក្រោម</span>
+        </div>
+        <div class="form-row" style="padding: 0 5px; margin-top: 30px">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="background-color: #fff"><i class="fas fa-key green-color"></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="ពាក្យសម្ងាត់" aria-label="Username" aria-describedby="basic-addon1" style="border-left-width: 0px">
+            </div>
+        </div>
+        <div class="form-row" style="padding: 0 5px">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="background-color: #fff"><i class="fas fa-key green-color"></i></span>
+                </div>
+                <input type="password" class="form-control" placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់" aria-label="Username" aria-describedby="basic-addon1" style="border-left-width: 0px">
+            </div>
+        </div>
+        <div class="form-row" style="margin-top: 15px; margin-bottom: 30px">
+          <div class="col-12">
+            <button type="submit" class="btn white-color" style="width: 100%; background-color: #08A800">បញ្ជាក់លេខកូដ</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="super-container margin-auto padding">
+        <div class="row">
+            <div class="left-footer col-md-4 col-sm-12">
+                <span class="white-color">មាតិកា</span>
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>ព័ត៌មាន / ព្រឹត្តិការណ៍</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>អំពីគេហទំព័រផ្សព្វផ្សាយកសិកម្ម</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>សេវាផ្សព្វផ្សាយ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>បណ្ណាល័យផ្សព្វផ្សាយកសិកម្ម</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>ស្នើដាក់ឯកសារ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>តំណភ្ជាប់គេហទំព័រផ្សេង</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="middle-footer col-md-4 col-sm-12">
+                <span class="white-color">បណ្តាញសង្គម</span>
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-facebook-square space"></i>Facebook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fab fa-youtube space"></i>YouTube</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-footer col-md-4 col-sm-12">
+                <div>
+                    <span class="white-color">ចំនួនអ្នកទស្សនា​</span>
+                    <br>
+                    <br>
+                    <span class="white-color word-weight word-space" style="margin-left: 30px">3 4 0 4 4 4</span>
+                </div>
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>Visit Today : 586</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>Visit Yesterday : 583</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>This Month : 6259</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-angle-double-right space"></i>This Year : 150313</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright row d-flex justify-content-center text-center margin-auto white-color">
+            <span>Copyright © 2020 Department of Extension for Agriculture, Forestry, and Fisheries</span>
+        </div>
+    </div>
+</footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
