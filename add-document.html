@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Document</title>
+  <title>Add New Document</title>
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -120,71 +120,133 @@
 
   <!-- content -->
   <div class="super-container margin-auto" style="padding: 50px 0">
-    <div class="container d-flex flex-column justify-content-center">
+    <div class="d-flex flex-column justify-content-center">
+        
         <div class="text-center">
-            <span class="green-color title">ឯកសាររបស់ខ្ញុំ</span>
+            <span class="green-color title">បញ្ចូលឯកសារថ្មី</span>
             <hr style="width: 60px; margin-top: 5px; border: 1px solid #08A800">
         </div>
 
-        <div>
-            <button​ class="btn white-color float-right" style="background-color: #08A800; border-radius: 0; width: 120px; margin: 20px 0">+ បញ្ចូលថ្មី</button>
-        </div>
-        
-        <table class="table table-bordered table-striped">
-            <thead class="white-color" style="background-color: #08A800">
-              <tr>
-                <th scope="col-4">ចំណងជើង</th>
-                <th scope="col-3">ចំនួនបានទាញយក</th>
-                <th scope="col-3">ថ្ងៃខែឆ្នាំចុះផ្សាយ</th>
-                <th scope="col-1">ស្ថានភាព</th>
-                <th scope="col-1">ស្នើរកែប្រែ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>50,900</td>
-                <td>August 22, 2020</td>
-                <td>Published</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>--</td>
-                <td>August 22, 2020</td>
-                <td>Pending</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>50,900</td>
-                <td>August 22, 2020</td>
-                <td>Published</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>--</td>
-                <td>August 22, 2020</td>
-                <td>Pending</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>50,900</td>
-                <td>August 22, 2020</td>
-                <td>Published</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-              <tr>
-                <td>ការចិញ្ចឹមកង្កែបក្នុងអាង – Frog culture in pond</td>
-                <td>--</td>
-                <td>August 22, 2020</td>
-                <td>Pending</td>
-                <td><i class="fas fa-edit" style="margin-right: 10px"></i>កែប្រែ</td>
-              </tr>
-            </tbody>
-          </table>
+        <form style="width: 100%; border: none">
+            <div class="d-flex flex-row justify-content-between">
+                <div class="left-content col-8">
+                    <div class="form-row d-flex flex-column" style="padding: 25px 6px">
+                        <label for="title" style="margin-bottom: 20px"><strong>ចំណងជើង</strong></label>
+                        <input class="form-control form-border" type="text" placeholder="ចំណងជើង" style="height: 60px; padding-left: 30px">
+                    </div>
+                    <div class="card" style="margin-bottom: 25px">
+                        <div class="card-header text-white" style="background-color: #08A800">
+                            ការពិពណ៌នា
+                        </div>
+                        <div class="card-body" style="padding: 0 5px">
+                            <div class="form-row">
+                                <textarea class="description" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card">
+                        <div class="card-header text-white" style="background-color: #08A800">
+                            ភ្ជាប់ឯកសារ
+                        </div>
+                        <div class="card-body" style="padding: 0 5px">
+                            Hello World
+                        </div>
+                    </div> -->
+                    <div class="card" style="margin-bottom: 25px">
+                        <div class="card-header text-white" style="background-color: #08A800">
+                            កំណត់ឯកសារ
+                        </div>
+                        <div class="card-body">
+                            <div class="form-row d-flex flex-column" style="padding: 25px 6px">
+                                <label for="title" style="margin-bottom: 20px"><strong>ជំនាន់</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="V.1.2" style="height: 60px; padding-left: 30px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header text-white" style="background-color: #08A800">
+                            ព័ត៌មានឯកសារ
+                        </div>
+                        <div class="card-body">
+                            <div class="form-row d-flex flex-column" style="padding: 10px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>អ្នកនិពន្ធ *</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="អ្នកនិពន្ធ" style="height: 60px; padding-left: 30px">
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>ប្រភេទ *</strong></label>
+                                <select class="form-control form-border" style="height: 60px; padding: 0 30px">
+                                    <option>ប្រភេទ ១</option>
+                                    <option>ប្រភេទ ២</option>
+                                    <option>ប្រភេទ ៣</option>
+                                    <option>ប្រភេទ ៤</option>
+                                </select>
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>អគ្គភាព *</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="Organization" style="height: 60px; padding-left: 30px">
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>ការបរិច្ជេទនៃការបោះពុម្ពផ្សាយ *</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="V.1.2" style="height: 60px; padding-left: 30px">
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>អ្នកបោះពុម្ពផ្សាយ</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="V.1.2" style="height: 60px; padding-left: 30px">
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>ទស្សនិកជនគោលដៅ *</strong></label>
+                                <select class="form-control form-border" style="height: 60px; padding: 0 30px">
+                                    <option>កសិករ - Farmers</option>
+                                    <option>២</option>
+                                    <option>៣</option>
+                                    <option>៤</option>
+                                </select>
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>កសិកម្ម -​ តំបន់សេដ្ឋកិច្ចកម្ពុជា</strong></label>
+                                <select class="form-control form-border" style="height: 60px; padding: 0 30px">
+                                    <option>គ្រប់តំបន់ជាទូទៅ - Generic</option>
+                                    <option>២</option>
+                                    <option>៣</option>
+                                    <option>៤</option>
+                                </select>
+                            </div>
+                            <div class="form-row d-flex flex-column" style="padding: 0px 6px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>ចំនួនទំព័រ ឬប្រវែង</strong></label>
+                                <input class="form-control form-border" type="text" placeholder="ជាលេខ" style="height: 60px; padding-left: 30px">
+                            </div>
+                            <div class="form-row d-flex flex-column​ form-border" style="padding: 25px 20px; margin: 0px 1px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>សូមផ្តល់សញ្ញា ធីក នៅក្នុងប្រអប់នេះ - By ticking this box, *</strong></label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">ខ្ញុំសូមផ្តល់សិទ្ធិឲ្យក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ ចែករំលែក និងប្រើប្រាស់ឯកសារនេះដោយសេរី - I grant MAFF
+                                        the right to freely distribute and use this file
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-row d-flex flex-column form-border" style="padding: 25px 20px; margin: 0 1px 25px">
+                                <label for="title" style="margin-bottom: 20px"><strong>Language *</strong></label>
+                                <div class="custom-control custom-checkbox" style="margin-bottom: 15px">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">អង់គ្លេស - English</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">ខ្មែរ - Khmer</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content col-4">
+                    
+                </div>
+            </div>
+            <div class="button d-flex justify-content-center">
+                <button class="btn col-2" style="background-color: #C9C9C9">បោះបង់</button>
+                <button class="btn col-2" style="background-color: #08A800">ដាក់ស្នើរ</button>
+            </div>
+        </form>
     </div>
   </div>
 
@@ -263,5 +325,11 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector:'textarea.description',
+        });
+    </script>
 </body>
 </html>

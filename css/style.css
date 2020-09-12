@@ -184,3 +184,11 @@ input[type=checkbox]:checked {
   border-color: #08A800;
   
 }
+
+.title {
+  font-size: 20px;
+}
+
+#mceu_30{
+  display: none;
+}
