@@ -128,8 +128,8 @@
         </div>
 
         <form style="width: 100%; border: none">
-            <div class="d-flex flex-row justify-content-between">
-                <div class="left-content col-8">
+            <div class="d-flex flex-row ">
+                <div class="left-content col-12​​ col-md-8">
                     <div class="form-row d-flex flex-column" style="padding: 25px 6px">
                         <label for="title" style="margin-bottom: 20px"><strong>ចំណងជើង</strong></label>
                         <input class="form-control form-border" type="text" placeholder="ចំណងជើង" style="height: 60px; padding-left: 30px">
@@ -217,40 +217,107 @@
                             </div>
                             <div class="form-row d-flex flex-column​ form-border" style="padding: 25px 20px; margin: 0px 1px 25px">
                                 <label for="title" style="margin-bottom: 20px"><strong>សូមផ្តល់សញ្ញា ធីក នៅក្នុងប្រអប់នេះ - By ticking this box, *</strong></label>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">ខ្ញុំសូមផ្តល់សិទ្ធិឲ្យក្រសួងកសិកម្ម រុក្ខាប្រមាញ់ និងនេសាទ ចែករំលែក និងប្រើប្រាស់ឯកសារនេះដោយសេរី - I grant MAFF
-                                        the right to freely distribute and use this file
-                                    </label>
+                                <div class="form-check" style="margin-bottom: 15px">
+                                    <input class="form-check-input" type="checkbox" id="agreement" value="agreement">
+                                    <label class="form-check-label" for="agreement">ខ្ញុំសូមផ្តល់សិទ្ធិឲ្យក្រសួងកសិកម្ម
+                                        រុក្ខាប្រមាញ់ និងនេសាទ ចែករំលែក និងប្រើប្រាស់ឯកសារនេះដោយសេរី - I grant MAFF
+                                        the right to freely distribute and use this file</label>
                                 </div>
                             </div>
                             <div class="form-row d-flex flex-column form-border" style="padding: 25px 20px; margin: 0 1px 25px">
                                 <label for="title" style="margin-bottom: 20px"><strong>Language *</strong></label>
-                                <div class="custom-control custom-checkbox" style="margin-bottom: 15px">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">អង់គ្លេស - English</label>
+                                <div class="form-check" style="margin-bottom: 15px">
+                                    <input class="form-check-input" type="checkbox" id="english"
+                                        value="english">
+                                    <label class="form-check-label" for="english">អង់គ្លេស - English</label>
                                 </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">ខ្មែរ - Khmer</label>
+                                <div class="form-check" style="margin-bottom: 15px">
+                                    <input class="form-check-input" type="checkbox" id="khmer"
+                                        value="english">
+                                    <label class="form-check-label" for="khmer">ខ្មែរ - Khmer</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="right-content col-4">
-                    
+                <div class="right-content col-3">
+                    <div class="card mb-25">
+                        <div class="card-header text-white mb-10" style="background-color: #08A800">
+                            ប្រភេទឯកសារ
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="english" value="option1">
+                                <label class="form-check-label font-12" for="english">ដំណាំ</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="khmer" value="option2">
+                                <label class="form-check-label font-12" for="khmer">សុខភាពសត្វ និងផលិតកម្មសត្វ</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="english" value="option1">
+                                <label class="form-check-label font-12" for="english">ព្រៃឈើ</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="khmer" value="option2">
+                                <label class="form-check-label font-12" for="khmer">ជលផល</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="english" value="option1">
+                                <label class="form-check-label font-12" for="english">កៅស៊ូ</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="khmer" value="option2">
+                                <label class="form-check-label font-12" for="khmer">កសិ-ឧស្សាហកម្ម</label>
+                            </div>
+                            <div class="form-check mb-30">
+                                <input class="form-check-input" type="checkbox" id="english" value="option1">
+                                <label class="form-check-label font-12" for="english">វិស្វកម្មកសិកម្ម</label>
+                            </div>
+                            <div class="form-check mb-15">
+                                <input class="form-check-input" type="checkbox" id="khmer" value="option2">
+                                <label class="form-check-label font-12" for="khmer">ឯកសារផ្សេងៗ</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-25">
+                        <div class="card-header text-white mb-10 bg-green">
+                            បស្លាក
+                        </div>
+                        <div class="card-body font-12">
+                            <span>ស្លាកប្រើច្រើនបំផុត</span>
+                            <div class="mt-20">
+                                <a href="#" class="green-color">ឯកសារ - Documentation</a>
+                                <a href="#" class="green-color">ឬស - Roots</a>
+                                <a href="#" class="green-color">ឫស្សី - Bamboo</a>
+                                <a href="#" class="green-color">ឧស្ម័នផ្ទះកញ្ចក់ - Greenhouse gases (GHG)</a>
+                                <a href="#" class="green-color">ឧបករណ៍កសិកម្ម - Agricultural equipment</a>
+                                <a href="#" class="green-color">ឥណទានសហប្រតិបត្តិការណ៍ - Credit cooperatives</a>
+                                <a href="#" class="green-color">អេកូឡូស៊ី - Ecology</a>
+                                <a href="#" class="green-color">អាហារសម្រាប់មនុស្ស - Human nutrition</a>
+                                <a href="#" class="green-color">អាហារសម្រាប់ទារក - Infant nutrition</a>
+                            </div>
+                            <div class="d-flex flex-row mt-40 justify-content-between">
+                                <input class="form-control form-border col-md-8" type="text" placeholder="Choose Separate Tag(s)">
+                                <button​ class="btn bg-green none-border-radius text-white col-md-3">បន្ថែម</button​>
+                            </div>
+                            <div class="mt-15">
+                                <button class="btn bg-green none-border-radius text-white font-12">ឯកសារ - Documentation &times;</button>
+                                <button class="btn bg-green none-border-radius text-white font-12">ឬស - Roots &times;</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="button d-flex justify-content-center">
-                <button class="btn col-2" style="background-color: #C9C9C9">បោះបង់</button>
-                <button class="btn col-2" style="background-color: #08A800">ដាក់ស្នើរ</button>
+                <button class="btn col-2 none-border-radius bg-white">បោះបង់</button>
+                <button class="btn col-2 bg-green text-white none-border-radius">ដាក់ស្នើរ</button>
             </div>
         </form>
     </div>
   </div>
 
-  <footer>
+<footer>
     <div class="super-container margin-auto padding">
         <div class="row">
             <div class="left-footer col-md-4 col-sm-12">
@@ -322,14 +389,14 @@
     </div>
 </footer>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/tinymce.min.js"></script>
-    <script>
-        tinymce.init({
-            selector:'textarea.description',
-        });
-    </script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector:'textarea.description',
+    });
+</script>
 </body>
 </html>
