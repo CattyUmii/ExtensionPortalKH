@@ -1,0 +1,51 @@
+#audio-player {
+    height: 35px;
+    width: 300px;
+    color: white;
+    -webkit-user-select: none;
+    /* webkit (safari, chrome) browsers */
+    -moz-user-select: none;
+    /* mozilla browsers */
+    -khtml-user-select: none;
+    /* webkit (konqueror) browsers */
+    -ms-user-select: none;
+    /* IE10+ */
+}
+
+#controls {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #08A800;
+}
+
+.time {
+    font-size: 10px;
+    color: white;
+    margin: 5px;
+}
+
+
+#progressbar,
+#volume {
+    height: 2px;
+    border-radius: 0px;
+    border: none;
+}
+
+#progressbar {
+    width: 160px;
+}
+
+#play,
+#mute {
+    font-size: 12px;
+    width: 20px;
+    color: #fff;
+}
+
+#volume {
+    width: 50px;
+    
+}

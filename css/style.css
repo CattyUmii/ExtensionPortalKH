@@ -279,12 +279,12 @@ input[type="checkbox"]:checked {
 }
 
 .yt-video .embed-responsive {
-  height: 400px;
+  height: 500px;
 }
 
 .yt-video .column-video-addon {
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .yt-video .column-video-addon .embed-responsive {
@@ -331,6 +331,16 @@ input[type="checkbox"]:checked {
   margin-bottom: 15px;
 
 }
+
+/* aside section */
+
+.voice-container .voice-box {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #08A800;
+  width: 100%;
+}
+
 
 .banner {
   padding-top: 30px;

@@ -8,39 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
-    <link rel="stylesheet" href="css/chromecast.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/audio.css">
+    <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    
 </head>
 
 <body>
-    <div id="container">
-
-        <audio preload="none" controls data-cast-title="[Your title]"
-            data-cast-description="[Your optional description]" data-cast-poster="/path/to/poster.jpg">
-
-            <source src="audio/example-1.mp3" type="audio/mp3">
-
+    
+        <audio id="player">
+            <source src="audio/example-1.mp3" type="audio/mpeg" />
         </audio>
+        <div id="audio-player">
+            <div id="controls">
+                <i id="play" class="fas fa-play"></i>
+                <div id="progressbar"></div>
+                <span id="time" class="time">00:00</span>
+                <i id="mute" class="fas fa-volume-up"></i>
+                <div id="volume"></div>
+            </div>
+        </div>
 
-    </div>
+       
+            <audio id="player">
+                <source src="audio/example-1.mp3" type="audio/mpeg" />
+            </audio>
+            <div id="audio-player">
+                <div id="controls">
+                    <i id="play" class="fas fa-play"></i>
+                    <div id="progressbar"></div>
+                    <span id="time" class="time">00:00</span>
+                    <i id="mute" class="fas fa-volume-up"></i>
+                    <div id="volume"></div>
+                </div>
+            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
-    <script>
-        var mediaElements = document.querySelectorAll('video, audio');
+   
 
-        for (var i = 0, total = mediaElements.length; i < total; i++) {
+   
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    
 
-            var features = ['playpause', 'current', 'progress', 'duration', 'volume', 'chromecast', 'fullscreen'];
-
-            new MediaElementPlayer(mediaElements[i], {
-                // This is needed to make Jump Forward to work correctly
-                pluginPath: 'https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/',
-                shimScriptAccess: 'always',
-                autoRewind: false,
-                features: features,
-            });
-        }
-    </script>
 </body>
-
+        
 </html>

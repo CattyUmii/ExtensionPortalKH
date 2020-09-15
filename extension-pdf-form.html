@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/util.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+     <link rel="stylesheet" href="css/audio.css">
+     <link rel="stylesheet" href="css/smoothness.css" />
+     <link rel="stylesheet" href="css/util.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>The Extension Hub</title>
 </head>
 
@@ -86,7 +89,7 @@
     <div class="super-container">
         <main>
             <!-- second-container -->
-            <div class="event-media">
+            <div class="event-media p-b-25">
                 <div class="row">
                     <div class="col-md-9">
                         <div class="book-library">
@@ -236,24 +239,171 @@
                                     width="319" height="500" style="border:none;overflow:hidden" scrolling="no"
                                     frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                             </div>
-                            <div class="voice-container">
-                                <div class="voice-title-header">
+                            <dciv class="voice-container">
+                                <div class="voice-title-header color-green m-t-10 m-b-15">
                                     សម្លេងបច្ចេកទេសសម្ខាន់ៗ
                                 </div>
-                                <div class="voice-box">
-                                    <div class="voice-title">
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
                                         Voice message Climate Resilience pine apple growing
                                         techniques Audio Player
                                     </div>
-                                    <div class="voice-sound">
-                                        <audio controls>
-                                            <source src="audio/example-1.mp3" type="audio/ogg">
-                                            <source src="audio/example-1.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio element.
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
                                         </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="voice-box m-b-10">
+                                    <div class="voice-title m-b-5 fs-14">
+                                        Voice message Climate Resilience pine apple growing
+                                        techniques Audio Player
+                                    </div>
+                                    <div class="voice-box-container">
+                                        <audio id="player">
+                                            <source src="audio/example-1.mp3" type="audio/mpeg" />
+                                        </audio>
+                                        <div id="audio-player">
+                                            <div id="controls">
+                                                <i id="play" class="fas fa-play"></i>
+                                                <div id="progressbar"></div>
+                                                <span id="time" class="time">00:00</span>
+                                                <i id="mute" class="fas fa-volume-up"></i>
+                                                <div id="volume"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dciv>
                         </aside>
                     </div>
                 </div>
@@ -345,9 +495,11 @@
         </div>
     </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+     <script src="js/jquery.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/jquery-ui.min.js"></script>
+     <script src="bootstrap/js/bootstrap.min.js"></script>
+     <script src="js/main.js"></script>
 
 </body>
 
