@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MediaElement.js 3.0 - Chromecast Plugin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">
+    <link rel="stylesheet" href="css/chromecast.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <audio preload="none" controls data-cast-title="[Your title]"
+            data-cast-description="[Your optional description]" data-cast-poster="/path/to/poster.jpg">
+
+            <source src="audio/example-1.mp3" type="audio/mp3">
+
+        </audio>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelement-and-player.min.js"></script>
+    <script>
+        var mediaElements = document.querySelectorAll('video, audio');
+
+        for (var i = 0, total = mediaElements.length; i < total; i++) {
+
+            var features = ['playpause', 'current', 'progress', 'duration', 'volume', 'chromecast', 'fullscreen'];
+
+            new MediaElementPlayer(mediaElements[i], {
+                // This is needed to make Jump Forward to work correctly
+                pluginPath: 'https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/',
+                shimScriptAccess: 'always',
+                autoRewind: false,
+                features: features,
+            });
+        }
+    </script>
+</body>
+
+</html>
